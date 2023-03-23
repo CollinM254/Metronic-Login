@@ -1,0 +1,209 @@
+/*  */
+:root {
+  --border-grey: #c4c7d2;
+  --text-grey: #767a8fce;
+  --url-blue: #44b9f8;
+  --text-highlight-color: #f0c70f;
+  --button-blue: #029ef7;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Styling of left side */
+.login {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 100vh;
+}
+
+.login-left {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: 6fr 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.social-logo-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.login-left-form {
+  align-self: center;
+}
+
+.login-title h3 {
+  margin-bottom: 5px;
+}
+
+.login-title .general-text {
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.login-form {
+  display: grid;
+  row-gap: 10px;
+}
+
+/* Since the page flow was centered, I thought centering text looks nicer. */
+.login-form > input {
+  padding: 7px 5px;
+  border-radius: 5px;
+  border-color: var(--border-grey);
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+}
+
+.login-form > input::placeholder {
+  color: var(--text-grey);
+}
+
+.login-form > a {
+  font-weight: 600;
+  text-align: right;
+  font-size: 12px;
+  margin-block: 10px;
+}
+
+.submit-button {
+  background-color: var(--button-blue);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding-block: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.social-btn {
+  display: inline-flex;
+  background: white;
+  padding: 10px 24px;
+  border: 1px solid var(--border-grey);
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-grey);
+  justify-content: center;
+}
+
+.social-buttons-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
+.social-btn span {
+  margin-block: auto;
+  margin-left: 10px;
+}
+
+.general-text {
+  color: var(--border-grey);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.login-title > .general-text {
+  margin-bottom: 25px;
+}
+
+a {
+  color: var(--url-blue);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.separator-line {
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  background: var(--border-grey);
+  margin-inline: 5px;
+}
+
+.or-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  color: var(--text-grey);
+  font-size: 12px;
+}
+
+.or-separator > span {
+  width: 100px;
+}
+
+footer a {
+  margin-inline: 2.5%;
+  font-weight: 600;
+}
+
+footer {
+  align-self: end;
+  margin-bottom: 15px;
+}
+
+/* Styling the right side */
+.login-right {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  background-color: #006deb;
+  justify-items: center;
+  align-items: center;
+  row-gap: 0;
+}
+
+.text-description {
+  text-align: center;
+  color: white;
+  width: 60%;
+}
+.text-description p {
+  font-size: 12px;
+}
+
+.metronic-logo-container,
+.banners-container {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.metronic-logo-container {
+  margin-inline: 25%;
+  width: 50%;
+  height: 50px;
+}
+
+.banners-container {
+  width: 90%;
+  height: 100%;
+}
+
+.highlighted-text {
+  color: var(--text-highlight-color);
+  font-weight: 600;
+}
+
+.metronic-title-container h2 {
+  text-align: center;
+  color: white;
+  margin-top: 0;
+}
+
+.metronic-title-container {
+  align-self: end;
+}
